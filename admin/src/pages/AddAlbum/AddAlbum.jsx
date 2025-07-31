@@ -37,6 +37,7 @@ const AddAlbum = () => {
       else {
         toast.error('Something went wrong')
        }
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
        toast.error("error occur")
     }
@@ -44,7 +45,7 @@ const AddAlbum = () => {
   }
 
   return loading ? (
-    <div className='grid place-items-center min-h-[80vh]'>
+    <div className='grid place-items-center bg-[url("https://wallpaperaccess.com/full/4775471.jpg")] min-h-[80vh]'>
       <div className='w-16 h-16 place-self-center border-4 border-gray-400 border-t-green-800 rounded-full animate-spin'></div>
     </div>
   ) : (
