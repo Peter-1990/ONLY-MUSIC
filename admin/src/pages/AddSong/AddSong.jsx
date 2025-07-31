@@ -41,6 +41,7 @@ const AddSong = () => {
         toast.error("Something went wrong")
       }
 
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error("Error occurred")
     }
@@ -59,6 +60,7 @@ const AddSong = () => {
         toast.error("Unable to load albums data")
       }
 
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error("Error occur")
     }
