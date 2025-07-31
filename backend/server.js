@@ -16,7 +16,7 @@ connectCloudinary();
 const allowedOrigins = ['https://admin-nine-mauve-24.vercel.app']; // Add your frontend URL here
 
 // Middlewares
-app.use(express.json());
+app.use(express.json( {limit: '10mb'}));
 app.use(cors({
     origin: allowedOrigins, // Allow only specified origins
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods if needed
